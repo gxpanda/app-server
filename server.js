@@ -1,8 +1,9 @@
 var express = require('express');
 var app = express();
+var PORT = process.env.PORT || 3000;
 
 app.get('/',function(req,res){
 	res.send('Hello Panda\'s First App Server!');
 });
 
-app.listen(3000);
+app.listen(PORT);
